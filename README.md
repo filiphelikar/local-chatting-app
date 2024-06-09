@@ -24,6 +24,7 @@ service cloud.firestore {
     }
   }
 }
+```
 
 3. **Get Your Firebase Config Keys:**
    - Go to your project settings in the Firebase console.
@@ -44,6 +45,7 @@ const firebaseConfig = {
   messagingSenderId: "your-messaging-sender-id",
   appId: "your-app-id"
 };
+```
 
 ## Available Scripts
 
