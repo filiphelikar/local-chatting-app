@@ -1,0 +1,49 @@
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.logout-button:hover {
+    background-color: #ff3333;
+}

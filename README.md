@@ -2,6 +2,49 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick Start
+
+### Setting Up Firebase Firestore
+
+1. **Create a Firebase Project:**
+   - Go to the [Firebase Console](https://console.firebase.google.com/).
+   - Click on "Add project" and follow the setup steps.
+
+2. **Add Firestore to Your Project:**
+   - In your Firebase project console, navigate to the "Firestore Database" section.
+   - Click on "Create database" and select the appropriate settings for your app.
+   - Update the Firestore Rules to the following:
+```plaintext
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+
+3. **Get Your Firebase Config Keys:**
+   - Go to your project settings in the Firebase console.
+   - Under the "General" tab, you will find your Firebase SDK snippet. Copy the configuration keys from this snippet.
+
+4. **Edit a Config File:**
+   - In your React project, edit a file at `src/firebase/config.js`.
+   - Paste the Firebase configuration keys into this file as follows:
+
+```javascript
+// src/firebase/config.js
+const firebaseConfig = {
+    /*↓you need to edit this↓*/
+  apiKey: "your-api-key",
+  authDomain: "your-auth-domain",
+  projectId: "your-project-id",
+  storageBucket: "your-storage-bucket",
+  messagingSenderId: "your-messaging-sender-id",
+  appId: "your-app-id"
+};
+
 ## Available Scripts
 
 In the project directory, you can run:

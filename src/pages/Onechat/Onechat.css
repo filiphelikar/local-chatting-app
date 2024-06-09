@@ -1,0 +1,75 @@
+.messages-section {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #a7a7a7;
+    border-radius: 8px;
+    background-color: #c7c7c7;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px; 
+}
+
+.message-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.message-time {
+    font-weight: bold;
+    font-size: 12px;
+    color: #525252;
+}
+
+.user-message {
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.message-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+    .messages-section {
+        min-height: 55vh;
+    }
+}
